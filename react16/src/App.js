@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="App container h-screen mx-auto p-4">
+      <div className="App container min-h-screen h-full mx-auto p-4">
         <Routes>
           <Route
             path="/"
@@ -32,10 +32,10 @@ function App() {
             }
           />
           <Route
-            path="product/:id"
+            path="products/:id"
             element={
               <Suspense fallback={<Loading fullscreen={true}></Loading>}>
-                <ProductPage />
+                <DashboardPage />
               </Suspense>
             }
           />

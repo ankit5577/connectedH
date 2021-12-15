@@ -46,7 +46,7 @@ export const AuthProvider = (props) => {
   // auto login
   useEffect(() => {
     const loggedInUser = JSON.parse(localStorage.getItem("connectedh_user"));
-    if (loggedInUser.username) {
+    if (loggedInUser?.username) {
       alert(`welcome back, ${loggedInUser.name}`)
       console.log(loggedInUser, 'auto login');
       setIsLoggedin(true);

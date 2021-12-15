@@ -34,7 +34,17 @@ export const Navbar = () => {
                 title="Our product"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
               >
-                Products
+                All Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/products/saved"
+                aria-label="saved product"
+                title="saved product"
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
+              >
+                Saved Products
               </Link>
             </li>
           </ul>
@@ -122,16 +132,28 @@ export const Navbar = () => {
                 <nav>
                   <ul className="space-y-4">
                     {authCtx.isLoggedIn && (
-                      <li>
-                        <Link
-                          to="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
-                        >
-                          Product
-                        </Link>
-                      </li>
+                      <div>
+                        <li>
+                          <Link
+                            to="/"
+                            aria-label="Our product"
+                            title="Our product"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
+                          >
+                            Product
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/products/all"
+                            aria-label="Our product"
+                            title="Our product"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
+                          >
+                            Saved Products
+                          </Link>
+                        </li>
+                      </div>
                     )}
                     {!authCtx.isLoggedIn && (
                       <li>
