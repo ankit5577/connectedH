@@ -5,11 +5,25 @@ import ProductStore from "../services/Product.state";
 
 function Dashboard() {
   const authCtx = useContext(AuthStore);
-  const { id } = useParams();
-  const [product, setProduct] = useState([]);
   const productCtx = useContext(ProductStore);
+  const { id } = useParams();
   const navigate = useNavigate();
+  const [product, setProduct] = useState([]);
   const [savedProducts, setSavedProducts] = useState(false);
+  // pagination
+  const [currentProducts, setCurrentProducts] = useState(1);
+  const [productsPerPage, setProductsPerPage] = useState(4);
+  const indexOfLastProduct = currentProducts * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const paginationProducts = product.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+  // total pages
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(product.length / productsPerPage); i++) {
+    pageNumbers.push(i);
+  }
 
   const saveHandler = (product) => {
     const name = JSON.parse(localStorage.getItem("connectedh_user"))["name"];
@@ -83,15 +97,14 @@ function Dashboard() {
     }
   }, [authCtx.isLoggedIn, navigate]);
 
-  useEffect(() => {
-  }, [productCtx.products]);
+  useEffect(() => {}, [productCtx.products]);
 
   return (
     <div className="p-4">
       <h2 className="text-xl md:text-3xl my-3 text-indigo-800 antialiased font-normal md:font-medium">
         {savedProducts ? "Saved Products" : "All Products"}
       </h2>
-      {product.length > 0 && (
+      {paginationProducts.length > 0 && (
         <div className="flex flex-col">
           <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -118,7 +131,7 @@ function Dashboard() {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {product.map((data) => (
+                    {paginationProducts.map((data) => (
                       <tr key={data._id}>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">
@@ -163,6 +176,28 @@ function Dashboard() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+              <div className="max-w-xl mx-auto my-2 overflow-x-auto flex flex-row">
+                <input
+                  className="w-[220px]"
+                  placeholder={`set products per page ${productsPerPage}`}
+                  onKeyUp={(e) => {
+                    const pagenumber = +e.target.value;
+                    if (Number.isInteger(pagenumber) && pagenumber > 0) {
+                      console.log(pagenumber);
+                      setProductsPerPage(pagenumber);
+                    }
+                  }}
+                />
+                {pageNumbers.map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentProducts(page)}
+                    className="border p-2 rounded-sm"
+                  >
+                    {page}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
