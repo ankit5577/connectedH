@@ -20,7 +20,6 @@ export const AuthProvider = (props) => {
   } = useHttp("/user/login", { method: "POST" }, (response) => {
     if (response) {
       setIsLoggedin(() => true);
-      console.log(response, 'response mabe')
       localStorage.setItem("connectedh_user", JSON.stringify(response));
     }
   });

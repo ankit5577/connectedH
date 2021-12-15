@@ -7,7 +7,6 @@ import { Navbar } from "./components/Navbar";
 
 const AuthPage = React.lazy(() => import("./pages/Auth"));
 const DashboardPage = React.lazy(() => import("./pages/Dashboard"));
-const ProductPage = React.lazy(() => import("./pages/Product"));
 
 function App() {
   return (

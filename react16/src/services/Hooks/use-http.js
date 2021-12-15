@@ -4,9 +4,9 @@ const useHttp = (url = "", options = {}, callback) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, seterror] = useState(null);
 
-  const api = "api";
+  const api = "http://localhost:4000/api";
 
-  const sendRequest = async (body=null) => {
+  const sendRequest = async (body = null) => {
     setIsLoading(true);
     seterror(null);
     try {

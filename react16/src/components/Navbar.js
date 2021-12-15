@@ -30,8 +30,8 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/products/all"
-                aria-label="Our product"
-                title="Our product"
+                aria-label="All products"
+                title="All products"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
               >
                 All Products
@@ -40,8 +40,8 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/products/saved"
-                aria-label="saved product"
-                title="saved product"
+                aria-label="saved products"
+                title="saved products"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
               >
                 Saved Products
@@ -68,7 +68,7 @@ export const Navbar = () => {
             <li>
               <button
                 onClick={logoutHandler}
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-indigo-500 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none"
               >
                 Logout
               </button>
@@ -136,18 +136,18 @@ export const Navbar = () => {
                         <li>
                           <Link
                             to="/"
-                            aria-label="Our product"
-                            title="Our product"
+                            aria-label="All products"
+                            title="All products"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                           >
-                            Product
+                            All Products
                           </Link>
                         </li>
                         <li>
                           <Link
-                            to="/products/all"
-                            aria-label="Our product"
-                            title="Our product"
+                            to="/products/saved"
+                            aria-label="Saved products"
+                            title="Saved products"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                           >
                             Saved Products
@@ -171,7 +171,7 @@ export const Navbar = () => {
                       <li>
                         <button
                           onClick={logoutHandler}
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none"
                         >
                           Logout
                         </button>
