@@ -25,25 +25,25 @@ const login = async (req, res, next) => {
           },
           res
         );
-      }
-      if (req.body.password === data.password) {
-        console.log("error 3");
-        sendResponse(
-          {
-            msg: `user ${req.body.username} is logged in`,
-            data: { ...data._doc, password: "" },
-          },
-          res
-        );
       } else {
-        console.log("error 4");
-        sendError(
-          {
-            title: "invalid_cred",
-            msg: "invalid credentials",
-          },
-          res
-        );
+        if (req.body.password === data.password) {
+          sendResponse(
+            {
+              msg: `user ${req.body.username} is logged in`,
+              data: { ...data._doc, password: "" },
+            },
+            res
+          );
+        } else {
+          console.log("error 4");
+          sendError(
+            {
+              title: "invalid_cred",
+              msg: "invalid credentials",
+            },
+            res
+          );
+        }
       }
     }
   } catch (error) {

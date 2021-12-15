@@ -6,7 +6,7 @@ const useHttp = (url = "", options = {}, callback) => {
 
   const api = "http://localhost:4000/api";
 
-  const sendRequest = async () => {
+  const sendRequest = async (body=null) => {
     setIsLoading(true);
     seterror(null);
     try {
@@ -18,7 +18,7 @@ const useHttp = (url = "", options = {}, callback) => {
           "Content-Type": "application/json",
           ...options.headers,
         },
-        body: options.body ? JSON.stringify(options.body) : null,
+        body: body ? JSON.stringify(body) : null,
       }).then((data) => data.json());
       if (!response.success) {
         // TODO:show notify
