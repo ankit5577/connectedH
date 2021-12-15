@@ -1,7 +1,9 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  mode: "jit",
-  content: ["./src/**/*.{js,jsx}"],
+  mode: process.env.TAILWIND_MODE ? "jit" : "",
+  darkMode: "class",
+  content: ["./src/**/*.{ts,html}"],
   theme: {
     extend: {
       fontFamily: {
