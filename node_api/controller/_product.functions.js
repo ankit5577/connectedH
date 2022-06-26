@@ -63,73 +63,7 @@ const getProduct = async (req, res, next) => {
   }
 };
 
-// TODO pending
-const createProduct = async (req, res, next) => {
-  try {
-    const data = await ProductModel.find({});
-    if (!data) {
-      sendError(
-        {
-          title: "no_products",
-          msg: "no product found",
-        },
-        res
-      );
-    }
-    sendResponse(
-      {
-        msg: "list of Products",
-        data,
-      },
-      res
-    );
-  } catch (error) {
-    console.log("ERROR at createProduct");
-    sendError(
-      {
-        title: "server_error",
-        msg: error,
-      },
-      res
-    );
-  }
-};
-
-// TODO pending
-const deleteProduct = async (req, res, next) => {
-  try {
-    const data = await ProductModel.find({});
-    if (!data) {
-      sendError(
-        {
-          title: "no_products",
-          msg: "no product found",
-        },
-        res
-      );
-    }
-    sendResponse(
-      {
-        msg: "list of Products",
-        data,
-      },
-      res
-    );
-  } catch (error) {
-    console.log("ERROR at deleteProduct");
-    sendError(
-      {
-        title: "server_error",
-        msg: error,
-      },
-      res
-    );
-  }
-};
-
 module.exports = {
   getAllProducts,
   getProduct,
-  createProduct,
-  deleteProduct,
 };
