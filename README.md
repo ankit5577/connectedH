@@ -6,14 +6,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://www.connectedh-frontend.herokuapp.com/">
+  <a href="https://connectedh-frontend.herokuapp.com/">
     <h1 align="center">SimEcommerce</h1>
   </a>
 
   <h3 align="center">Simple Ecommerce with pagination & auto login</h3>
 
   <p align="center">
-    <a href="https://www.connectedh-frontend.herokuapp.com/">View Demo</a>
+    <a href="https://connectedh-frontend.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/ankit5577/connectedh/issues">Report Bug</a>
     ·
@@ -94,7 +94,7 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-* go to [App](https://www.connectedh-frontend.herokuapp.com)
+* go to [App](https://connectedh-frontend.herokuapp.com)
 <img src="assets/medicoeye_login.png" width="100%" height="100%">
 
 login with any of these credentials:
