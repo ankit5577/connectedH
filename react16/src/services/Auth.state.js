@@ -20,7 +20,7 @@ export const AuthProvider = (props) => {
   } = useHttp("/user/login", { method: "POST" }, (response) => {
     if (response) {
       setIsLoggedin(() => true);
-      localStorage.setItem("connectedh_user", JSON.stringify(response));
+      localStorage.setItem("SimEcommerce_user", JSON.stringify(response));
     }
   });
   useEffect(() => {
@@ -44,7 +44,7 @@ export const AuthProvider = (props) => {
 
   // auto login
   useEffect(() => {
-    const loggedInUser = JSON.parse(localStorage.getItem("connectedh_user"));
+    const loggedInUser = JSON.parse(localStorage.getItem("SimEcommerce_user"));
     if (loggedInUser?.username) {
       alert(`welcome back, ${loggedInUser.name}`)
       console.log(loggedInUser, 'auto login');
@@ -58,7 +58,7 @@ export const AuthProvider = (props) => {
 
   const logoutHandler = () => {
     setIsLoggedin(() => false);
-    localStorage.setItem('connectedh_user', '{}')
+    localStorage.setItem('SimEcommerce_user', '{}')
   };
 
   const init_value = {

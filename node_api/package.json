@@ -1,7 +1,7 @@
 {
   "name": "node_api",
   "version": "1.0.0",
-  "description": "backend api for ConnectedH Frontend",
+  "description": "backend api for SimEcommerce Frontend",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankit5577/connectedH.git"
+    "url": "git+https://github.com/ankit5577/SimEcommerce.git"
   },
   "keywords": [
-    "connectedH"
+    "SimEcommerce"
   ],
   "author": "ankit5577",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ankit5577/connectedH/issues"
+    "url": "https://github.com/ankit5577/SimEcommerce/issues"
   },
-  "homepage": "https://github.com/ankit5577/connectedH#readme",
+  "homepage": "https://github.com/ankit5577/SimEcommerce#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

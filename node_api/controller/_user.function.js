@@ -17,7 +17,6 @@ const login = async (req, res, next) => {
         username: req.body.username,
       });
       if (!data) {
-        console.log("error 2");
         sendError(
           {
             title: "no_user",
@@ -35,7 +34,6 @@ const login = async (req, res, next) => {
             res
           );
         } else {
-          console.log("error 4");
           sendError(
             {
               title: "invalid_cred",
@@ -47,7 +45,6 @@ const login = async (req, res, next) => {
       }
     }
   } catch (error) {
-    console.log("error 5");
     console.log("ERROR at login");
     sendError(
       {

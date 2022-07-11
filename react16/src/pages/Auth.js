@@ -19,13 +19,13 @@ function AuthPage() {
       alert("you are already LoggedIn");
       navigate("/");
     }
-  }, []);
+  }, [authCtx.isLoggedIn, navigate]);
 
   useEffect(() => {
     if (authCtx.isLoggedIn) {
       navigate("/");
     }
-  }, [authCtx.isLoggedIn, navigate]);
+  }, []);
 
   useEffect(() => {
     setLoading(() => authCtx.isLoading);

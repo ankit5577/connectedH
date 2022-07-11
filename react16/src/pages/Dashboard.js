@@ -26,7 +26,7 @@ function Dashboard() {
   }
 
   const saveHandler = (product) => {
-    const name = JSON.parse(localStorage.getItem("connectedh_user"))["name"];
+    const name = JSON.parse(localStorage.getItem("SimEcommerce_user"))["name"];
     const savedProducts = JSON.parse(localStorage.getItem(`${name}_user_item`));
     if (!savedProducts) {
       localStorage.setItem(`${name}_user_item`, JSON.stringify([product]));
@@ -44,8 +44,9 @@ function Dashboard() {
     }
   };
 
+  // delete from localstorage
   const deleteSave = (product) => {
-    const name = JSON.parse(localStorage.getItem("connectedh_user"))["name"];
+    const name = JSON.parse(localStorage.getItem("SimEcommerce_user"))["name"];
     const savedProducts = JSON.parse(localStorage.getItem(`${name}_user_item`));
     if (!savedProducts) {
       alert("product is already deleted or is unavailable!");
@@ -73,7 +74,7 @@ function Dashboard() {
         break;
       case "saved":
         setSavedProducts(() => true);
-        const name = JSON.parse(localStorage.getItem("connectedh_user"))[
+        const name = JSON.parse(localStorage.getItem("SimEcommerce_user"))[
           "name"
         ];
         const savedProducts = JSON.parse(

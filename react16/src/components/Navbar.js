@@ -22,7 +22,7 @@ export const Navbar = () => {
           className="inline-flex items-center"
         >
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-            ConnectedH
+           SimEcommerce
           </span>
         </Link>
         {authCtx.isLoggedIn && (
@@ -104,12 +104,12 @@ export const Navbar = () => {
                   <div>
                     <Link
                       to="/"
-                      aria-label="ConnectedH"
-                      title="ConnectedH"
+                      aria-label="SimEcommerce"
+                      title="SimEcommerce"
                       className="inline-flex items-center"
                     >
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        ConnectedH
+                        SimEcommerce
                       </span>
                     </Link>
                   </div>
