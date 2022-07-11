@@ -16,13 +16,6 @@ function AuthPage() {
 
   useEffect(() => {
     if (authCtx.isLoggedIn) {
-      alert("you are already LoggedIn");
-      navigate("/");
-    }
-  }, [authCtx.isLoggedIn, navigate]);
-
-  useEffect(() => {
-    if (authCtx.isLoggedIn) {
       navigate("/");
     }
   }, []);

@@ -4,7 +4,7 @@ const useHttp = (url = "", options = {}, callback) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, seterror] = useState(null);
 
-  const api = process.env.NODE_ENV === 'development' ? "http://localhost:4000/api": "";
+  const api = process.env.NODE_ENV === 'development' ? "http://localhost:4000/api": "api";
 
   // custom hook for sending http requests.
   const sendRequest = async (body = null) => {

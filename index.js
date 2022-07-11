@@ -6,8 +6,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 // import routes
-const ProductRoute = require("./controller/product");
-const UserRoute = require("./controller/user");
+const ProductRoute = require("./api/controller/product");
+const UserRoute = require("./api/controller/user");
 
 const app = express();
 
@@ -42,22 +42,28 @@ app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Credentials", true);
   next();
 });
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "./api/public")));
 
 app.use(morgan("dev"));
+
+app.get("/", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "api/public/index.html"));
+});
 
 // localhost:3000/api/product/
 app.use("/api/product", ProductRoute);
 app.use("/api/user", UserRoute);
 
-app.use((res, error) => {
-  console.error("error??", error.errors, res);
-  // console.log("error???", error);
-  // res.json({hello})
+app.get("/*", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "api/public/index.html"));
 });
 
-app.get("*", (req, res, next) => {
-  res.sendFile(path.join(__dirname, "public/index.html"));
+app.use((res, error, next) => {
+  console.log("final error", error.errors);
+  next();
+  // console.error("error??", error.errors, res);
+  // console.log("error???", error);
+  // res.json({hello})
 });
 
 const PORT = process.env.PORT || 5000;

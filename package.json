@@ -4,8 +4,8 @@
   "description": "simple ecommerce app with auto login and pagination",
   "main": "index.js",
   "scripts": {
-    "start": "node node_api/index.js",
-    "dev": "nodemon node_api/index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

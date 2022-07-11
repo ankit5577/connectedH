@@ -2,7 +2,6 @@ const UserModel = require("../models/user.model");
 const { sendResponse, sendError } = require("./_helper");
 
 const login = async (req, res, next) => {
-  console.log(req.body)
   try {
     if (!req.body.username || !req.body.password) {
       sendError(
