@@ -11,7 +11,7 @@
   </a>
 
   <h3 align="center">Simple Ecommerce with pagination & auto login</h3>
-
+ 
   <p align="center">
     <a href="https://connectedh-frontend.herokuapp.com/">View Demo</a>
     ·
