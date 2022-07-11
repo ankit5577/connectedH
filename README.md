@@ -140,16 +140,15 @@ Project Link: [https://www.connectedh.herokuapp.com/](https://www.connectedh.her
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[username]: ankit5577
-[contributors-shield]: https://img.shields.io/github/contributors/[username]/connectedh.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ankit5577/connectedh.svg?style=for-the-badge
 [contributors-url]: https://github.com/anki5577/connectedh-frontend/contributors
-[forks-shield]: https://img.shields.io/github/forks/[username]/connectedh.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/ankit5577/connectedh.svg?style=for-the-badge
 [forks-url]: https://github.com/anki5577/connectedh-frontend/members
-[stars-shield]: https://img.shields.io/github/stars/[username]/connectedh.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/ankit5577/connectedh.svg?style=for-the-badge
 [stars-url]: https://github.com/anki5577/connectedh-frontend/stargazers
-[issues-shield]: https://img.shields.io/github/issues/[username]/connectedh.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ankit5577/connectedh.svg?style=for-the-badge
 [issues-url]: hhttps://github.com/anki5577/connectedh-frontend/issues
-[license-shield]: https://img.shields.io/github/license/[username]/connectedh.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/ankit5577/connectedh.svg?style=for-the-badge
 [license-url]: https://github.com/anki5577/connectedh-frontend/assets/LICENSE.txt
 [linkedin-aiboost]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ankit5577_dev
