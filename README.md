@@ -7,7 +7,6 @@
 <br />
 <p align="center">
   <a href="https://www.connectedh-frontend.herokuapp.com/">
-    <img src="frontend/src/assets/images/logo_min.svg" alt="Logo" width="280" height="120">
     <h1 align="center">SimEcommerce</h1>
   </a>
 
@@ -82,16 +81,16 @@ This is an example of how to list things you need to use the software and how to
    ```bash
    $ git clone https://github.com/ankit5577/connectedh.git
    ```
-2. Install NPM packages in both main folder and `react16` folder
+2. Install NPM packages in both `main folder` and `react16` folder
    ```bash
    $ npm install
    ```
-3. add `.env` file in backend folder
+3. add `.env` file in `main folder` folder
    ```env
     PORT="3000" # specify express port
     MONGO_URL="" # specify mongodb url
    ```
-4. run ```npm start``` in both frontend and main parent folder.
+4. run ```npm start``` in both frontend and main folder.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -100,24 +99,14 @@ This is an example of how to list things you need to use the software and how to
 
 login with any of these credentials:
 ```
-<!-- for receptionist🧑🏽‍💻 role -->
-email: cmcrecep@gmail.com
-password: ankit
+email: richard@connectedh.com 
+password: richard@123
 
-<!-- for doctor👨🏻‍⚕️ role -->
-email: cmcdoc@gmail.com
-password: ankit
+email: joe@connectedh.com 
+password: joe@123
 
-email: cmcdoc2@gmail.com
-password: ankit
-
-<!-- for admin👨‍💼 role -->
-email: ankit@ankit.com
-password: ankit
-
-<!-- for lab👩‍🔬 role -->
-email: cmclab@gmail.com
-password: ankit
+email: sean@connectedh.com
+password: sean@123
 ```
 
 * Dashboard
@@ -126,7 +115,7 @@ password: ankit
 <!-- CONTRIBUTING -->
 ## Contributing
 
-**For AiBoost**.
+**For SimEcommerce**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -145,7 +134,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ankit Kaushal - [@ankit55771](https://twitter.com/ankit55771) - ankit@aiboost.in
+Ankit Kaushal - [@ankit5577.dev](https://twitter.com/ankit5577.dev) - ankit5577.dev@gmail.com
 
 Project Link: [https://www.connectedh.herokuapp.com/](https://www.connectedh.herokuapp.com/)
 
