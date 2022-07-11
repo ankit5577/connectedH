@@ -18,7 +18,7 @@ function AuthPage() {
     if (authCtx.isLoggedIn) {
       navigate("/");
     }
-  }, []);
+  }, [authCtx.isLoggedIn, navigate]);
 
   useEffect(() => {
     setLoading(() => authCtx.isLoading);
