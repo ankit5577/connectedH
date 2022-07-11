@@ -134,11 +134,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ankit Kaushal - [@ankit5577.dev](https://twitter.com/ankit5577.dev) - ankit5577.dev@gmail.com
+Ankit Kaushal - [@ankit5577](https://twitter.com/ankit5577_dev) - ankit5577.dev@gmail.com
 
 Project Link: [https://www.connectedh.herokuapp.com/](https://www.connectedh.herokuapp.com/)
-
-
 
 
 
@@ -154,4 +152,4 @@ Project Link: [https://www.connectedh.herokuapp.com/](https://www.connectedh.her
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/anki5577/connectedh-frontend/assets/LICENSE.txt
 [linkedin-aiboost]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ankit5577
+[linkedin-url]: https://linkedin.com/in/ankit5577_dev
